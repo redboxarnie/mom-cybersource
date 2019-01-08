@@ -1,0 +1,21 @@
+{
+  "name": "cybersource",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "cybersource-rest-client": "^0.0.5"
+  },
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

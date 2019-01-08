@@ -1,0 +1,68 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "magento.payments.payments_management.validate",
+  "params": {
+    "payment": {
+      "gateway": "string",
+      "gateway_account": "string",
+      "gateway_key": "string",
+      "amount": "float",
+      "currency": "string",
+      "order_id": "string",
+      "operation_reference": "string",
+      "new_gateway_key": "string",
+      "lines": [
+        {
+          "line_number": "1",
+          "item_name": "string",
+          "item_sku": "SKU1",
+          "item_type": "string",
+          "quantity": "3",
+          "unit_price_gross": "2.00",
+          "refund_amount": "float",
+          "tax_amount": "float",
+          "tax_rate": "float"
+        },
+        {
+          "line_number": "2",
+          "item_name": "string",
+          "item_sku": "SKU3",
+          "item_type": "string",
+          "quantity": "1",
+          "unit_price_gross": "3.00",
+          "refund_amount": "float",
+          "tax_amount": "float",
+          "tax_rate": "float"
+        }
+      ],
+      "method_details": {
+        "method": "string",
+        "submethod": "string",
+        "card": {
+          "bin": "string",
+          "last_four_digits": "string",
+          "expiration_year": "string",
+          "expiration_month": "string",
+          "authorization_code": "string",
+          "avs_response_code": "string",
+          "cvv_response_code": "string"
+        },
+        "bank": {
+          "account_holder_name": "string",
+          "iban": "string",
+          "security_indicator": "integer"
+        }
+      },
+      "gateway_command": "string",
+      "gateway_response": "string",
+      "gateway_response_time": "float",
+      "custom_attributes": [
+        {
+          "name": "string",
+          "value": "string"
+        }
+      ]
+    }
+  }
+}
